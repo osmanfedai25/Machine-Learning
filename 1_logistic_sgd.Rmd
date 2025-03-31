@@ -1,6 +1,3 @@
-# Constructing a logistic regression estimator
-## Dr Thomas Robinson | Day 1 -- Oxford Spring School 2025
-
 ## Defining a data and prediction function
 
 In this exercise we will focus on a simple binary classification context, in which we use logistic regression to estimate the coefficient values. First, we will generate training data using random uniform distributions:
