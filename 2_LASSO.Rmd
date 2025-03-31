@@ -1,6 +1,4 @@
-# LASSO models and post-double selection
-## Dr Thomas Robinson | Day 2 -- Oxford Spring School 2025
-
+LASSO REGRESIION:
 This code adapts the replication materials contained in Blackwell and Olson (2021), ``Reducing Model Misspecification and Bias in the Estimation of Interactions'', available at: https://doi.org/10.7910/DVN/HZYFRI
 
 In turn, this paper replicates original findings presented in: Escribà‐Folch, A., Meseguer, C. and Wright, J. (2018), Remittances and Protest in Dictatorships. American Journal of Political Science, 62: 889-904. https://doi.org/10.1111/ajps.12382
