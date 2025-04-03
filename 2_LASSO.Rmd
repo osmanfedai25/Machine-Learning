@@ -1,9 +1,6 @@
 LASSO REGRESIION:
 This code adapts the replication materials contained in Blackwell and Olson (2021), ``Reducing Model Misspecification and Bias in the Estimation of Interactions'', available at: https://doi.org/10.7910/DVN/HZYFRI
-
-In turn, this paper replicates original findings presented in: Escribà‐Folch, A., Meseguer, C. and Wright, J. (2018), Remittances and Protest in Dictatorships. American Journal of Political Science, 62: 889-904. https://doi.org/10.1111/ajps.12382
-
-NOTE: For the purpose of demonstration, we'll make several simplifying assumptions about both the post-double selection procedure and the inference model -- you can review the two papers to compare how our strategy differs
+In turn, this paper replicates original findings presented in: Escribà‐Folch, A., Meseguer, C. and Wright, J. (2018), Remittances and Protest in Dictatorships. American Journal of Political Science, 62: 889-904. 
 
 ## Package requirements and data pre-processing
 
@@ -141,7 +138,7 @@ message("DS model:")
 summary(ds_model)$coefficients[c("remit","remit_dict"),]
 ```
 
-## Exercises
+## Exercises for Future Studying:
 
 1a. Generate a training dataset X with 100 variables and 2000 observations, where each observation is a draw from a random uniform distribution between -5 and 5.
 
@@ -156,9 +153,6 @@ summary(ds_model)$coefficients[c("remit","remit_dict"),]
 
 *What are the sizes of coefficient X1 X2? Do X3-X10 have non-zero coefficients? What about X11-X100? How would you explain these results to a non-ML researcher?*
 
-
-2. Blackwell and Olson propose a slightly more complicated regularization procedure in their post-double selection method, whereby they use separate regularisation for each coefficient.
-
 Further information can be found on pages 14-15 of the article, available here:
 https://mattblackwell.org/files/papers/lasso-inters.pdf
 
@@ -167,4 +161,3 @@ https://github.com/mattblackwell/inters/blob/master/R/lasso_interactions.R
 
 2a. Using the help file for glmnet, i.e. type `?glmnet` into the console, and looking at lines 252-254 in the github file above, what argument is passed to glmnet to penalize individual coefficient values?
 
-2b. Without worrying too much about the surrounding code, describe what lines 250-261 achieve. 
